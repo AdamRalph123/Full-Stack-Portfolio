@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/52f2f51ead.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>Full Stack Portfolio</title>
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
 
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
         <nav class="navbar">
-            <a href="#" style="--i:1;" class="active">Home</a>
-            <a href="#" style="--i:2;">About</a>
-            <a href="#" style="--i:3;">Skills</a>
-            <a href="#" style="--i:4;">Portfolio</a>
-            <a href="#" style="--i:5;">Contact</a>
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#skills" style="--i:3;">Skills</a>
+            <a href="#portfolio" style="--i:4;">Portfolio</a>
+            <a href="#contact" style="--i:5;">Contact</a>
         </nav>
     </header>
     <section class="home">
@@ -32,19 +41,44 @@
             <a href="#"><i class="fa-brands fa-square-github"></i></a>
         </div>
         <div class="home-content">
-            <h1> / Hi, I'm Adam Ralph</h1>
-            <h3>Junior Full Stack Software Developer</h3>
+            <h1>Hi, I'm <span style="color: #fff; font-weight: bold;">Adam Ralph</span></h1>
+            <h3><span>Full Stack Software Developer</span></h3>
             <p>I have recently completed a Full Stack Software Development course.</p>
+            <a href="#cv" id="btn">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
         </div>
+        
+        <div class="image">
+            <img src="images/test-img.jpg" alt="" width="100%">
+        </div>
+       
+    </section>
 
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-                    <img src="images/test-img.jpg" alt="">
-                </div>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+        <h3><span style="color: #fff; font-weight: bold;">About Me</span></h3>
+            <p>Hello! I'm Adam, an aspiring Software Developer based in Dublin, Ireland. 
+                <br>I have recently completed a Full
+                Stack Software Development course</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h3>Here are some of the technologies I have been working with:</h3>
+        <div class="skills-container">
+            <ul style="width:15%; float:left;">
+                <li>HTML5</li>
+                <li>CSS3</li>
+             </ul>
+          
+             <ul style="width:15%; float:left;">
+                <li>JavaScript</li>
+                <li>Python</li>
+             </ul>
+
+             <ul style="width:15%; float:left;">
+                <li>Django</li>
+                <li>PostgreSQL</li>
+             </ul>
         </div>
     </section>
 </body>
